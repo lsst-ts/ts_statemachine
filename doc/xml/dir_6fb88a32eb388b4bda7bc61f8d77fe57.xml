@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_6fb88a32eb388b4bda7bc61f8d77fe57" kind="dir">
+    <compoundname>python/lsst/ts</compoundname>
+    <innerdir refid="dir_f8512d481f2a965e61cbc853c4239286">python/lsst/ts/statemachine</innerdir>
+    <innerfile refid="ts_2____init_____8py">__init__.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="python/lsst/ts/"/>
+  </compounddef>
+</doxygen>

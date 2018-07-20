@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classlsst_1_1ts_1_1statemachine_1_1state__transition__exception_1_1StateTransitionException" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ts::statemachine::state_transition_exception::StateTransitionException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="30">
+        <label>Exception</label>
+      </node>
+      <node id="29">
+        <label>lsst.ts.statemachine.state_transition_exception.StateTransitionException</label>
+        <link refid="classlsst_1_1ts_1_1statemachine_1_1state__transition__exception_1_1StateTransitionException"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="32">
+        <label>Exception</label>
+      </node>
+      <node id="31">
+        <label>lsst.ts.statemachine.state_transition_exception.StateTransitionException</label>
+        <link refid="classlsst_1_1ts_1_1statemachine_1_1state__transition__exception_1_1StateTransitionException"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ts/statemachine/state_transition_exception.py" line="1" column="1" bodyfile="python/lsst/ts/statemachine/state_transition_exception.py" bodystart="1" bodyend="2"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

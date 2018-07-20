@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ts::statemachine::states::EnabledState</compoundname>
+    <basecompoundref refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState" prot="public" virt="non-virtual">lsst.ts.statemachine.states.DefaultState</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState_1ad11f1ab6fb1002b0702eae51f3112572" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ts.statemachine.states.EnabledState.__init__</definition>
+        <argsstring>(self, subsystem_tag, events=(&apos;summaryState&apos;,), tsleep=0.5)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>subsystem_tag</type>
+          <defname>subsystem_tag</defname>
+        </param>
+        <param>
+          <type>events</type>
+          <defname>events</defname>
+          <defval>(&apos;summaryState&apos;,)</defval>
+        </param>
+        <param>
+          <type>tsleep</type>
+          <defname>tsleep</defname>
+          <defval>0.5</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="186" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="186" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState_1a7a532ead165401789745c42f6700ff41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ts.statemachine.states.EnabledState.disable</definition>
+        <argsstring>(self, model)</argsstring>
+        <name>disable</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="189" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="189" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState_1ad3487d50c2b6bcd7cd49972d7d7ae262" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ts.statemachine.states.EnabledState.exit</definition>
+        <argsstring>(self, model)</argsstring>
+        <name>exit</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="193" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="193" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState_1a058eb9901683658ca6ebb3da0d50e752" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ts.statemachine.states.EnabledState.do</definition>
+        <argsstring>(self, model)</argsstring>
+        <name>do</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="196" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="196" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState_1ad16f3f25b1310c4153b18c35ff28598c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ts.statemachine.states.EnabledState.on_hearbeat</definition>
+        <argsstring>(self, model)</argsstring>
+        <name>on_hearbeat</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="199" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="199" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState_1aeea0a4461920f0e555e7467078e65a33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ts.statemachine.states.EnabledState.on_incoming_messaging_error</definition>
+        <argsstring>(self, model)</argsstring>
+        <name>on_incoming_messaging_error</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="202" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="202" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState_1ac13ae847c7ee16b8481c1a3802e73274" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ts.statemachine.states.EnabledState.on_interrupt_end_loop</definition>
+        <argsstring>(self, model)</argsstring>
+        <name>on_interrupt_end_loop</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="205" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="205" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState_1a81ab30a092998247e77563c69b68e35a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ts.statemachine.states.EnabledState.on_interrupt_process_triggers</definition>
+        <argsstring>(self, model)</argsstring>
+        <name>on_interrupt_process_triggers</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="208" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="208" bodyend="210"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="14">
+        <label>lsst.ts.statemachine.states.DefaultState</label>
+        <link refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState"/>
+      </node>
+      <node id="13">
+        <label>lsst.ts.statemachine.states.EnabledState</label>
+        <link refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="16">
+        <label>lsst.ts.statemachine.states.DefaultState</label>
+        <link refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState"/>
+      </node>
+      <node id="15">
+        <label>lsst.ts.statemachine.states.EnabledState</label>
+        <link refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ts/statemachine/states.py" line="184" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="184" bodyend="211"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState_1ad11f1ab6fb1002b0702eae51f3112572" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>__init__</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a6a550bb9b3a75ff4ca4880211778adf3" prot="public" virt="non-virtual" ambiguityscope="lsst::ts::statemachine::states::DefaultState."><scope>lsst::ts::statemachine::states::EnabledState</scope><name>__init__</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState_1a7a532ead165401789745c42f6700ff41" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>disable</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState_1a058eb9901683658ca6ebb3da0d50e752" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>do</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a539e887fa71bf1f9d6caf324571dce13" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>enable</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1aad0afd2a990dffe2f2e873dc1719853b" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>enter_control</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState_1ad3487d50c2b6bcd7cd49972d7d7ae262" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>exit</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a73f166029ea7d58d755259730aae1727" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>exit_control</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1af1419d45d10d76a486bfb6a23d59f526" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>log</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a055999cd1dc40758266bda41383002bb" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>logEvent</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1ac73747fbfd5ea2938e0c71635224f3a0" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>mgr</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a452e6ca9bd920f45a12c27e2f7b793a8" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>myData</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a1fb657f66c0cdbfcecc967b3116848ff" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>myData_keys</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a4f3cb92eec9c59a452695777097df2ea" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>name</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState_1ad16f3f25b1310c4153b18c35ff28598c" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>on_hearbeat</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState_1aeea0a4461920f0e555e7467078e65a33" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>on_incoming_messaging_error</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState_1ac13ae847c7ee16b8481c1a3802e73274" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>on_interrupt_end_loop</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState_1a81ab30a092998247e77563c69b68e35a" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>on_interrupt_process_triggers</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1ad4649318a830299b1f32891f4f5a3456" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>SALPY_lib</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a302142c353918f82bbc7db0a132a71ce" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>send_logEvent</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a5cf3d03ff5eadb58289343e41f433aef" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>sleep</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1ada510a9e816debaf5aed9527ee804dca" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>standby</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1aeba6efdfef0a7f647f826a40ee88c899" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>start</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a4f2c32b6740624d72e1c49ac0987440e" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>subscribe_logEvent</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a44b3d880719d5babcf582e32f7485bf0" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>subsystem_tag</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a9e760bd9b1bdcd81aa5bd3dacacb7fd0" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>tsleep</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a6f41e468527636360f91895c6e549362" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::EnabledState</scope><name>wake</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

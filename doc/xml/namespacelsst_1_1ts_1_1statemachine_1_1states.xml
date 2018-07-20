@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacelsst_1_1ts_1_1statemachine_1_1states" kind="namespace" language="Python">
+    <compoundname>lsst::ts::statemachine::states</compoundname>
+    <innerclass refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState" prot="public">lsst::ts::statemachine::states::DefaultState</innerclass>
+    <innerclass refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DisabledState" prot="public">lsst::ts::statemachine::states::DisabledState</innerclass>
+    <innerclass refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState" prot="public">lsst::ts::statemachine::states::EnabledState</innerclass>
+    <innerclass refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1FaultState" prot="public">lsst::ts::statemachine::states::FaultState</innerclass>
+    <innerclass refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1OfflineState" prot="public">lsst::ts::statemachine::states::OfflineState</innerclass>
+    <innerclass refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1StandbyState" prot="public">lsst::ts::statemachine::states::StandbyState</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacelsst_1_1ts_1_1statemachine_1_1states_1a3e59c197c8adaea5739db38a33e6d827" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary lsst::ts::statemachine::states.summary_state_enum</definition>
+        <argsstring></argsstring>
+        <name>summary_state_enum</name>
+        <initializer>=  {&apos;DISABLE&apos;:0,
+                      &apos;ENABLE&apos;:1,
+                      &apos;FAULT&apos;:2,
+                      &apos;OFFLINE&apos;:3,
+                      &apos;STANDBY&apos;:4}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="13" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Definitions for states of SAL compoments.
+Taken from file toolsmod.py in:
+https://github.com/lsst/ctrl_iip/blob/master/python/lsst/iip/toolsmod.py
+</verbatim> </para>    </detaileddescription>
+    <location file="python/lsst/ts/statemachine/states.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

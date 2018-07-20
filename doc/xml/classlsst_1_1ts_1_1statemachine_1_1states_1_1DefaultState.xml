@@ -1,0 +1,490 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ts::statemachine::states::DefaultState</compoundname>
+    <derivedcompoundref refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DisabledState" prot="public" virt="non-virtual">lsst.ts.statemachine.states.DisabledState</derivedcompoundref>
+    <derivedcompoundref refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState" prot="public" virt="non-virtual">lsst.ts.statemachine.states.EnabledState</derivedcompoundref>
+    <derivedcompoundref refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1FaultState" prot="public" virt="non-virtual">lsst.ts.statemachine.states.FaultState</derivedcompoundref>
+    <derivedcompoundref refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1OfflineState" prot="public" virt="non-virtual">lsst.ts.statemachine.states.OfflineState</derivedcompoundref>
+    <derivedcompoundref refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1StandbyState" prot="public" virt="non-virtual">lsst.ts.statemachine.states.StandbyState</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a4f3cb92eec9c59a452695777097df2ea" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst.ts.statemachine.states.DefaultState::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="23" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a44b3d880719d5babcf582e32f7485bf0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst.ts.statemachine.states.DefaultState::subsystem_tag</definition>
+        <argsstring></argsstring>
+        <name>subsystem_tag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="24" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a9e760bd9b1bdcd81aa5bd3dacacb7fd0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst.ts.statemachine.states.DefaultState::tsleep</definition>
+        <argsstring></argsstring>
+        <name>tsleep</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="25" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1af1419d45d10d76a486bfb6a23d59f526" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst.ts.statemachine.states.DefaultState::log</definition>
+        <argsstring></argsstring>
+        <name>log</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="27" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1ac73747fbfd5ea2938e0c71635224f3a0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst.ts.statemachine.states.DefaultState::mgr</definition>
+        <argsstring></argsstring>
+        <name>mgr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="29" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a452e6ca9bd920f45a12c27e2f7b793a8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst.ts.statemachine.states.DefaultState::myData</definition>
+        <argsstring></argsstring>
+        <name>myData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="30" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a055999cd1dc40758266bda41383002bb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst.ts.statemachine.states.DefaultState::logEvent</definition>
+        <argsstring></argsstring>
+        <name>logEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="31" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a1fb657f66c0cdbfcecc967b3116848ff" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst.ts.statemachine.states.DefaultState::myData_keys</definition>
+        <argsstring></argsstring>
+        <name>myData_keys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="32" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1ad4649318a830299b1f32891f4f5a3456" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst.ts.statemachine.states.DefaultState::SALPY_lib</definition>
+        <argsstring></argsstring>
+        <name>SALPY_lib</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="33" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a6a550bb9b3a75ff4ca4880211778adf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ts.statemachine.states.DefaultState.__init__</definition>
+        <argsstring>(self, name, subsystem_tag, events=(&apos;summaryState&apos;,), tsleep=0.5)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>subsystem_tag</type>
+          <defname>subsystem_tag</defname>
+        </param>
+        <param>
+          <type>events</type>
+          <defname>events</defname>
+          <defval>(&apos;summaryState&apos;,)</defval>
+        </param>
+        <param>
+          <type>tsleep</type>
+          <defname>tsleep</defname>
+          <defval>0.5</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="22" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="22" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a4f2c32b6740624d72e1c49ac0987440e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ts.statemachine.states.DefaultState.subscribe_logEvent</definition>
+        <argsstring>(self, eventname)</argsstring>
+        <name>subscribe_logEvent</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>eventname</type>
+          <defname>eventname</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create a subscription for the {subsystem_tag}_logevent_{eventnname}
+This step need to be done before we call send_logEvent
+
+:param eventname:
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="38" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="38" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a302142c353918f82bbc7db0a132a71ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ts.statemachine.states.DefaultState.send_logEvent</definition>
+        <argsstring>(self, eventname, kwargs)</argsstring>
+        <name>send_logEvent</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>eventname</type>
+          <defname>eventname</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Send logevent for an eventname
+
+:param eventname:
+:param kwargs:
+:return:
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="55" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="55" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a5cf3d03ff5eadb58289343e41f433aef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ts.statemachine.states.DefaultState.sleep</definition>
+        <argsstring>(self)</argsstring>
+        <name>sleep</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="80" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="80" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a6f41e468527636360f91895c6e549362" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ts.statemachine.states.DefaultState.wake</definition>
+        <argsstring>(self)</argsstring>
+        <name>wake</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="83" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a8c4ddd22fb673529ffeb0a4ce283ff78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ts.statemachine.states.DefaultState.disable</definition>
+        <argsstring>(self, model)</argsstring>
+        <name>disable</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="89" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="89" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a539e887fa71bf1f9d6caf324571dce13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ts.statemachine.states.DefaultState.enable</definition>
+        <argsstring>(self, model)</argsstring>
+        <name>enable</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="92" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="92" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a73f166029ea7d58d755259730aae1727" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ts.statemachine.states.DefaultState.exit_control</definition>
+        <argsstring>(self, model)</argsstring>
+        <name>exit_control</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="95" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="95" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1ada510a9e816debaf5aed9527ee804dca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ts.statemachine.states.DefaultState.standby</definition>
+        <argsstring>(self, model)</argsstring>
+        <name>standby</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="98" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="98" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1aeba6efdfef0a7f647f826a40ee88c899" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ts.statemachine.states.DefaultState.start</definition>
+        <argsstring>(self, model)</argsstring>
+        <name>start</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="101" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="101" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1aad0afd2a990dffe2f2e873dc1719853b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ts.statemachine.states.DefaultState.enter_control</definition>
+        <argsstring>(self, model)</argsstring>
+        <name>enter_control</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="104" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="104" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1aebc38113b587ea06aeb6867712ece672" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ts.statemachine.states.DefaultState.exit</definition>
+        <argsstring>(self, model)</argsstring>
+        <name>exit</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="107" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="107" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a7a1253b52276896ad0d8e504d51ff74a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ts.statemachine.states.DefaultState.do</definition>
+        <argsstring>(self, model)</argsstring>
+        <name>do</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ts/statemachine/states.py" line="110" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="110" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>lsst.ts.statemachine.states.FaultState</label>
+        <link refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1FaultState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lsst.ts.statemachine.states.DisabledState</label>
+        <link refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DisabledState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ts.statemachine.states.DefaultState</label>
+        <link refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState"/>
+      </node>
+      <node id="7">
+        <label>lsst.ts.statemachine.states.StandbyState</label>
+        <link refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1StandbyState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lsst.ts.statemachine.states.OfflineState</label>
+        <link refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1OfflineState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lsst.ts.statemachine.states.EnabledState</label>
+        <link refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="python/lsst/ts/statemachine/states.py" line="20" column="1" bodyfile="python/lsst/ts/statemachine/states.py" bodystart="20" bodyend="115"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a6a550bb9b3a75ff4ca4880211778adf3" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::DefaultState</scope><name>__init__</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a8c4ddd22fb673529ffeb0a4ce283ff78" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::DefaultState</scope><name>disable</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a7a1253b52276896ad0d8e504d51ff74a" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::DefaultState</scope><name>do</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a539e887fa71bf1f9d6caf324571dce13" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::DefaultState</scope><name>enable</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1aad0afd2a990dffe2f2e873dc1719853b" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::DefaultState</scope><name>enter_control</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1aebc38113b587ea06aeb6867712ece672" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::DefaultState</scope><name>exit</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a73f166029ea7d58d755259730aae1727" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::DefaultState</scope><name>exit_control</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1af1419d45d10d76a486bfb6a23d59f526" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::DefaultState</scope><name>log</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a055999cd1dc40758266bda41383002bb" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::DefaultState</scope><name>logEvent</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1ac73747fbfd5ea2938e0c71635224f3a0" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::DefaultState</scope><name>mgr</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a452e6ca9bd920f45a12c27e2f7b793a8" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::DefaultState</scope><name>myData</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a1fb657f66c0cdbfcecc967b3116848ff" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::DefaultState</scope><name>myData_keys</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a4f3cb92eec9c59a452695777097df2ea" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::DefaultState</scope><name>name</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1ad4649318a830299b1f32891f4f5a3456" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::DefaultState</scope><name>SALPY_lib</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a302142c353918f82bbc7db0a132a71ce" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::DefaultState</scope><name>send_logEvent</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a5cf3d03ff5eadb58289343e41f433aef" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::DefaultState</scope><name>sleep</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1ada510a9e816debaf5aed9527ee804dca" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::DefaultState</scope><name>standby</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1aeba6efdfef0a7f647f826a40ee88c899" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::DefaultState</scope><name>start</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a4f2c32b6740624d72e1c49ac0987440e" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::DefaultState</scope><name>subscribe_logEvent</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a44b3d880719d5babcf582e32f7485bf0" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::DefaultState</scope><name>subsystem_tag</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a9e760bd9b1bdcd81aa5bd3dacacb7fd0" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::DefaultState</scope><name>tsleep</name></member>
+      <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a6f41e468527636360f91895c6e549362" prot="public" virt="non-virtual"><scope>lsst::ts::statemachine::states::DefaultState</scope><name>wake</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

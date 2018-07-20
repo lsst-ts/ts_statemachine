@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classlsst_1_1ts_1_1statemachine_1_1context_1_1Context" kind="class"><name>lsst::ts::statemachine::context::Context</name>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1context_1_1Context_1a8fdd761c097e5b8aaa526a4d701e6cf4" kind="variable"><name>subsystem_tag</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1context_1_1Context_1a643a204ccc451c8700c84c9992b67d1c" kind="variable"><name>model</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1context_1_1Context_1a71585f815fb252c8c9b5e1e9463cae4c" kind="variable"><name>current_state</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1context_1_1Context_1a94607ded65eb0478d9c6bb4335e06534" kind="variable"><name>tsleep</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1context_1_1Context_1a5a30c2ea45882ac22249f3b4be3a9ce7" kind="variable"><name>states</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1context_1_1Context_1a3108fd7a16fea26a751334e2461e55ca" kind="variable"><name>log</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1context_1_1Context_1a9b7a09c5ab7eba175455076cb7808158" kind="function"><name>__init__</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1context_1_1Context_1aba926f6248628bc400a2fe82ff775621" kind="function"><name>subscribe_list</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1context_1_1Context_1a91cdce51db2d88e255d1f0d7a5d97595" kind="function"><name>send_logEvent</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1context_1_1Context_1a53016ff56ba4b0ab0b8bd74159041661" kind="function"><name>subscribe_logEvent</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1context_1_1Context_1a109135ca1424a0e49a3e31e9f7668814" kind="function"><name>get_current_state</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1context_1_1Context_1aca52ae7b875bcd9b72bc7e549650f3dd" kind="function"><name>validate_transition</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1context_1_1Context_1a187d66ab944b7764e09b885889171f6d" kind="function"><name>execute_command</name></member>
+  </compound>
+  <compound refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState" kind="class"><name>lsst::ts::statemachine::states::DefaultState</name>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a4f3cb92eec9c59a452695777097df2ea" kind="variable"><name>name</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a44b3d880719d5babcf582e32f7485bf0" kind="variable"><name>subsystem_tag</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a9e760bd9b1bdcd81aa5bd3dacacb7fd0" kind="variable"><name>tsleep</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1af1419d45d10d76a486bfb6a23d59f526" kind="variable"><name>log</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1ac73747fbfd5ea2938e0c71635224f3a0" kind="variable"><name>mgr</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a452e6ca9bd920f45a12c27e2f7b793a8" kind="variable"><name>myData</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a055999cd1dc40758266bda41383002bb" kind="variable"><name>logEvent</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a1fb657f66c0cdbfcecc967b3116848ff" kind="variable"><name>myData_keys</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1ad4649318a830299b1f32891f4f5a3456" kind="variable"><name>SALPY_lib</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a6a550bb9b3a75ff4ca4880211778adf3" kind="function"><name>__init__</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a4f2c32b6740624d72e1c49ac0987440e" kind="function"><name>subscribe_logEvent</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a302142c353918f82bbc7db0a132a71ce" kind="function"><name>send_logEvent</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a5cf3d03ff5eadb58289343e41f433aef" kind="function"><name>sleep</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a6f41e468527636360f91895c6e549362" kind="function"><name>wake</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a8c4ddd22fb673529ffeb0a4ce283ff78" kind="function"><name>disable</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a539e887fa71bf1f9d6caf324571dce13" kind="function"><name>enable</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a73f166029ea7d58d755259730aae1727" kind="function"><name>exit_control</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1ada510a9e816debaf5aed9527ee804dca" kind="function"><name>standby</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1aeba6efdfef0a7f647f826a40ee88c899" kind="function"><name>start</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1aad0afd2a990dffe2f2e873dc1719853b" kind="function"><name>enter_control</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1aebc38113b587ea06aeb6867712ece672" kind="function"><name>exit</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DefaultState_1a7a1253b52276896ad0d8e504d51ff74a" kind="function"><name>do</name></member>
+  </compound>
+  <compound refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DisabledState" kind="class"><name>lsst::ts::statemachine::states::DisabledState</name>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DisabledState_1a97c6c654468fe2ae20e8e3e336a6863d" kind="function"><name>__init__</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DisabledState_1a5dd3bbaf10786b5651f79707d808f4b7" kind="function"><name>enable</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DisabledState_1ae8b564619806849f4b3d15bb4a2b4326" kind="function"><name>standby</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DisabledState_1a5db599abca30bee4c4de26f9c3aeb99f" kind="function"><name>exit</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DisabledState_1a4e795db0358fdb3c7b26d5811d67c067" kind="function"><name>do</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DisabledState_1a28f9a811096ab79e588f5822391fc77a" kind="function"><name>on_heartbeat</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DisabledState_1af99351d8b78e4cca9289708ee8b3a5ab" kind="function"><name>on_incoming_messaging_error</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DisabledState_1aae35f1fcee515bd6ebaf3ea69b99f2d1" kind="function"><name>on_interrupt_end_loop</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1DisabledState_1addade8a5cf7cced838b28fa676700e29" kind="function"><name>on_interrupt_process_triggers</name></member>
+  </compound>
+  <compound refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState" kind="class"><name>lsst::ts::statemachine::states::EnabledState</name>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState_1ad11f1ab6fb1002b0702eae51f3112572" kind="function"><name>__init__</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState_1a7a532ead165401789745c42f6700ff41" kind="function"><name>disable</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState_1ad3487d50c2b6bcd7cd49972d7d7ae262" kind="function"><name>exit</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState_1a058eb9901683658ca6ebb3da0d50e752" kind="function"><name>do</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState_1ad16f3f25b1310c4153b18c35ff28598c" kind="function"><name>on_hearbeat</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState_1aeea0a4461920f0e555e7467078e65a33" kind="function"><name>on_incoming_messaging_error</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState_1ac13ae847c7ee16b8481c1a3802e73274" kind="function"><name>on_interrupt_end_loop</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1EnabledState_1a81ab30a092998247e77563c69b68e35a" kind="function"><name>on_interrupt_process_triggers</name></member>
+  </compound>
+  <compound refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1FaultState" kind="class"><name>lsst::ts::statemachine::states::FaultState</name>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1FaultState_1a77cd34720d61d69f083f82f5938f8174" kind="function"><name>__init__</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1FaultState_1acd5d0d9561543f2bb825d752ec861533" kind="function"><name>go_to_standby</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1FaultState_1a54f956bd38690a2f549ede59534a7d27" kind="function"><name>on_heartbeat</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1FaultState_1ad5d5f30710576497df8769ae7d653050" kind="function"><name>on_incoming_messaging_error</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1FaultState_1a7373ec5d211927d58de3436fd91afe6a" kind="function"><name>on_interrupt_end_loop</name></member>
+  </compound>
+  <compound refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1OfflineState" kind="class"><name>lsst::ts::statemachine::states::OfflineState</name>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1OfflineState_1ae8ad3fd07835f411bf9c583553418a56" kind="function"><name>__init__</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1OfflineState_1aa1afbc755348699e521d4cff6f89a92f" kind="function"><name>enter_control</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1OfflineState_1a09884729b31a24a5432620b2d7e9efa8" kind="function"><name>exit</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1OfflineState_1ac34728a3a2323c644d70337f1fcbc2e5" kind="function"><name>do</name></member>
+  </compound>
+  <compound refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1StandbyState" kind="class"><name>lsst::ts::statemachine::states::StandbyState</name>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1StandbyState_1a50c92e08dfceb646987935efec5d3a5f" kind="function"><name>__init__</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1StandbyState_1a6ab9fcc393ef618f30ea04150df9a838" kind="function"><name>exit_control</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1StandbyState_1a8cce407a5339931dc3b8f2b966eb8dba" kind="function"><name>start</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1StandbyState_1afb3bfb766ce054946abbb0eab8a13326" kind="function"><name>exit</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1StandbyState_1a5348f075336fdf307aee43b8f61be078" kind="function"><name>do</name></member>
+    <member refid="classlsst_1_1ts_1_1statemachine_1_1states_1_1StandbyState_1a61eddf22bbe21e2026db2384e9101745" kind="function"><name>on_heartbeat</name></member>
+  </compound>
+  <compound refid="classlsst_1_1ts_1_1statemachine_1_1state__transition__exception_1_1StateTransitionException" kind="class"><name>lsst::ts::statemachine::state_transition_exception::StateTransitionException</name>
+  </compound>
+  <compound refid="namespacelsst" kind="namespace"><name>lsst</name>
+    <member refid="____init_____8py_1a44079467df69b81c1f5d3b6db0f3bd10" kind="variable"><name>__path__</name></member>
+  </compound>
+  <compound refid="namespacelsst_1_1ts" kind="namespace"><name>lsst::ts</name>
+    <member refid="ts_2____init_____8py_1afb7dd51d79f8fa47f4d520f26c91d818" kind="variable"><name>__path__</name></member>
+  </compound>
+  <compound refid="namespacelsst_1_1ts_1_1statemachine" kind="namespace"><name>lsst::ts::statemachine</name>
+  </compound>
+  <compound refid="namespacelsst_1_1ts_1_1statemachine_1_1context" kind="namespace"><name>lsst::ts::statemachine::context</name>
+  </compound>
+  <compound refid="namespacelsst_1_1ts_1_1statemachine_1_1state__transition__exception" kind="namespace"><name>lsst::ts::statemachine::state_transition_exception</name>
+  </compound>
+  <compound refid="namespacelsst_1_1ts_1_1statemachine_1_1states" kind="namespace"><name>lsst::ts::statemachine::states</name>
+    <member refid="namespacelsst_1_1ts_1_1statemachine_1_1states_1a3e59c197c8adaea5739db38a33e6d827" kind="variable"><name>summary_state_enum</name></member>
+  </compound>
+  <compound refid="____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="ts_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="ts_2statemachine_2____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="context_8py" kind="file"><name>context.py</name>
+  </compound>
+  <compound refid="state__transition__exception_8py" kind="file"><name>state_transition_exception.py</name>
+  </compound>
+  <compound refid="states_8py" kind="file"><name>states.py</name>
+  </compound>
+  <compound refid="dir_d636e51d042aeddf07edacc9f18ac821" kind="dir"><name>python/lsst</name>
+  </compound>
+  <compound refid="dir_7837fde3ab9c1fb2fc5be7b717af8d79" kind="dir"><name>python</name>
+  </compound>
+  <compound refid="dir_f8512d481f2a965e61cbc853c4239286" kind="dir"><name>python/lsst/ts/statemachine</name>
+  </compound>
+  <compound refid="dir_6fb88a32eb388b4bda7bc61f8d77fe57" kind="dir"><name>python/lsst/ts</name>
+  </compound>
+</doxygenindex>
