@@ -10,14 +10,14 @@ from enum import Enum
 
 
 class SummaryState(Enum):
-	DISABLED = 1
-	ENABLED = 2
-	FAULT = 3
-	OFFLINE = 4
-	STANDBY = 5
+    DISABLED = 1
+    ENABLED = 2
+    FAULT = 3
+    OFFLINE = 4
+    STANDBY = 5
 
 class StateTransitionException(Exception):
     pass
 
 class CommandNotRecognizedException(Exception):
-	pass
+    pass
