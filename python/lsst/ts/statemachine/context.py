@@ -47,7 +47,7 @@ class Context:
                               'STANDBY': 'standby',
                               'EXITCONTROL': 'exit_control'}
 
-    def execute_command(self, command):
+    def execute_command(self, command, data):
         """This method delegates commands recieved by a DDSController to the
         state.
 
@@ -67,6 +67,7 @@ class Context:
             # Call exit methods, killing threads perhaps
             current_state.exit(self.model)
             # Call our "change state" method dynamically
+            current_state.data = data
             getattr(current_state, self._command_list[command])(self.model)
             # Since the state we changed to is implementer decided, we re-get it
             current_state = self.states[self.model.state]

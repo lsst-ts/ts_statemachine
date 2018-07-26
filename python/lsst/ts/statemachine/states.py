@@ -7,6 +7,7 @@ class DefaultState:
         self.name = name
         self.subsystem_tag = subsystem_tag
         self.tsleep = tsleep
+        self.data = None
         self.log = logging.getLogger(self.name)
 
     # <----- Default State methods corresponding to UML design under here ------>
