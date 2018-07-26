@@ -1,6 +1,4 @@
-import time
 import logging
-import inspect
 from lsst.ts.statemachine import StateTransitionException, SummaryState
 
 class DefaultState:
@@ -11,7 +9,7 @@ class DefaultState:
         self.tsleep = tsleep
         self.log = logging.getLogger(self.name)
 
-    #<----- Default State methods corresponding to UML design under here ------>
+    # <----- Default State methods corresponding to UML design under here ------>
 
     def disable(self, model):
         raise StateTransitionException()
@@ -32,11 +30,10 @@ class DefaultState:
         raise StateTransitionException()
 
     def exit(self, model):
-        self.log.debug("Default: exit() not implemented")
+        pass
 
     def do(self, model):
-        self.log.debug("Default: do() not implemented")
-
+        pass
 
 
 class OfflineState(DefaultState):
@@ -49,10 +46,10 @@ class OfflineState(DefaultState):
         # TODO model.send_summary_state(SUMMARY_STATE_ENUM["STANDBY"])
 
     def exit(self, model):
-        self.log.debug("Offline: exit() not implemented")
+        pass
 
     def do(self, model):
-        self.log.debug("Offline: do() not implemented")
+        pass
 
 
 class StandbyState(DefaultState):
@@ -69,13 +66,15 @@ class StandbyState(DefaultState):
         # TODO model.send_summary_state(SUMMARY_STATE_ENUM["DISABLED"])
 
     def exit(self, model):
-        self.log.debug("Standby: exit() not implemented")
+        pass
 
     def do(self, model):
-        self.log.debug("Standby: do() not implemented")
+        if model.previous_state == "OFFLINE":
+            model.send_valid_settings()
 
     def on_heartbeat(self, model):
         pass
+
 
 class DisabledState(DefaultState):
 
@@ -84,17 +83,15 @@ class DisabledState(DefaultState):
 
     def enable(self, model):
         model.state = "ENABLED"
-        # TODO model.send_summary_state(SUMMARY_STATE_ENUM["ENABLED"])
 
     def standby(self, model):
         model.state = "STANDBY"
-        # TODO model.send_summary_state(SUMMARY_STATE_ENUM["STANDBY"])
 
     def exit(self, model):
-        self.log.debug("Disabled: exit() not implemented")
+        pass
 
     def do(self, model):
-        self.log.debug("Disabled: do() not implemented")
+        pass
 
     def on_heartbeat(self, model):
         pass
@@ -108,6 +105,7 @@ class DisabledState(DefaultState):
     def on_interrupt_process_triggers(self, model):
         pass
 
+
 class EnabledState(DefaultState):
 
     def __init__(self, subsystem_tag, tsleep=0.5):
@@ -115,13 +113,12 @@ class EnabledState(DefaultState):
 
     def disable(self, model):
         model.state = "DISABLED"
-        # TODO model.send_summary_state(SUMMARY_STATE_ENUM["DISABLED"])
 
     def exit(self, model):
-        self.log.debug("Enabled: exit() not implemented")
+        pass
 
     def do(self, model):
-        self.log.debug("Enabled: do() not implemented")
+        pass
 
     def on_hearbeat(self, model):
         pass
@@ -135,6 +132,7 @@ class EnabledState(DefaultState):
     def on_interrupt_process_triggers(self, model):
         pass
 
+
 class FaultState(DefaultState):
 
     def __init__(self, subsystem_tag, tsleep=0.5):
@@ -142,7 +140,6 @@ class FaultState(DefaultState):
 
     def go_to_standby(self, model):
         model.state = "STANDBY"
-        # TODO model.send_summary_state(SUMMARY_STATE_ENUM["STANDBY"])
 
     def on_heartbeat(self, model):
         pass
