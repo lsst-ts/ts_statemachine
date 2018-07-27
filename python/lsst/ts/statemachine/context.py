@@ -68,11 +68,12 @@ class Context:
             current_state.exit(self.model)
             # Call our "change state" method dynamically
             current_state.data = data
-            getattr(current_state, self._command_list[command])(self.model)
+            err, msg = getattr(current_state, self._command_list[command])(self.model)
             # Since the state we changed to is implementer decided, we re-get it
             current_state = self.states[self.model.state]
             # Call the do methods on the state we just entered, starting threads perhaps
             current_state.do(self.model)
+            return err, msg
         else:
             raise CommandNotRecognizedException()
 

@@ -44,6 +44,7 @@ class OfflineState(DefaultState):
 
     def enter_control(self, model):
         model.state = "STANDBY"
+        return 0, 'Done : OK'
         # TODO model.send_summary_state(SUMMARY_STATE_ENUM["STANDBY"])
 
     def exit(self, model):
@@ -60,10 +61,12 @@ class StandbyState(DefaultState):
 
     def exit_control(self, model):
         model.state = "OFFLINE"
+        return 0, 'Done : OK'
         # TODO model.send_summary_state(SUMMARY_STATE_ENUM["OFFLINE"])
 
     def start(self, model):
         model.state = "DISABLED"
+        return 0, 'Done : OK'
         # TODO model.send_summary_state(SUMMARY_STATE_ENUM["DISABLED"])
 
     def exit(self, model):
@@ -84,9 +87,11 @@ class DisabledState(DefaultState):
 
     def enable(self, model):
         model.state = "ENABLED"
+        return 0, 'Done : OK'
 
     def standby(self, model):
         model.state = "STANDBY"
+        return 0, 'Done : OK'
 
     def exit(self, model):
         pass
@@ -114,6 +119,7 @@ class EnabledState(DefaultState):
 
     def disable(self, model):
         model.state = "DISABLED"
+        return 0, 'Done : OK'
 
     def exit(self, model):
         pass
@@ -139,8 +145,9 @@ class FaultState(DefaultState):
     def __init__(self, subsystem_tag, tsleep=0.5):
         super(FaultState, self).__init__('FAULT', subsystem_tag, tsleep)
 
-    def go_to_standby(self, model):
-        model.state = "STANDBY"
+    def exit_control(self, model):
+        model.state = "OFFLINE"
+        return 0, 'Done : OK'
 
     def on_heartbeat(self, model):
         pass
