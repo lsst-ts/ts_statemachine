@@ -16,8 +16,5 @@ class SummaryState(Enum):
     OFFLINE = 4
     STANDBY = 5
 
-class StateTransitionException(Exception):
-    pass
-
 class CommandNotRecognizedException(Exception):
     pass

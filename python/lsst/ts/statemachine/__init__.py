@@ -23,6 +23,7 @@
 
 from __future__ import absolute_import
 
-from .state_machine_utils import SummaryState, StateTransitionException, CommandNotRecognizedException
+from .state_machine_utils import SummaryState, CommandNotRecognizedException
 from .states import DefaultState, OfflineState, StandbyState, DisabledState, EnabledState, FaultState
 from .context import Context
+from .simple_csc import SimpleModel, SimpleCSC

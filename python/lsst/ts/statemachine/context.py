@@ -1,6 +1,7 @@
 from lsst.ts.statemachine import (OfflineState, StandbyState, DisabledState,
                                   EnabledState, FaultState,
                                   CommandNotRecognizedException)
+import logging
 
 class Context:
     """The Context orchestrates triggers from the states to the model.
@@ -27,6 +28,8 @@ class Context:
         self.model = model
         self.current_state = default_state
         self.tsleep = tsleep
+        self.log = logging.getLogger('Context({})'.format(self.subsystem_tag))
+
         if states is not None:
             self.states = states
         else:

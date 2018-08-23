@@ -1,5 +1,5 @@
 import logging
-from lsst.ts.statemachine import StateTransitionException, SummaryState
+from salpytools import StateTransitionException
 
 class DefaultState:
 
