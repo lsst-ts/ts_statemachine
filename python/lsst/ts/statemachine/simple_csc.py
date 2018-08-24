@@ -46,6 +46,8 @@ class SimpleCSC:
                                                    device_id=self.device_id)
         self.start = salpylib.DDSController(context=self.context, command='start',
                                             device_id=self.device_id)
+        self.standby = salpylib.DDSController(context=self.context, command='standby',
+                                              device_id=self.device_id)
         self.enable = salpylib.DDSController(context=self.context, command='enable',
                                              device_id=self.device_id)
         self.disable = salpylib.DDSController(context=self.context, command='disable',
@@ -58,6 +60,7 @@ class SimpleCSC:
         # start all controller threads
         self.entercontrol.start()
         self.start.start()
+        self.standby.start()
         self.enable.start()
         self.disable.start()
         self.exitcontrol.start()
@@ -76,6 +79,8 @@ class SimpleCSC:
         self.disable.stop()
         self.log.debug('Stopping exit control...')
         self.exitcontrol.stop()
+        self.log.debug('Stopping standby...')
+        self.standby.stop()
 
         self.log.debug('Waiting threads to finish...')
         self.entercontrol.join()
@@ -83,4 +88,5 @@ class SimpleCSC:
         self.enable.join()
         self.disable.join()
         self.exitcontrol.join()
+        self.standby.join()
         self.log.debug('Done')
