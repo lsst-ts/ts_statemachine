@@ -1,5 +1,5 @@
 from lsst.ts.statemachine.states import (EnabledState, DisabledState, StandbyState,
-                                         FaultState, OfflineState, DefaultState)
+                                         FaultState, OfflineState)
 from lsst.ts.statemachine.context import Context
 from salpytools import salpylib
 from threading import Event
@@ -21,12 +21,69 @@ class SimpleModel:
         self.position = None
         self.status = None
 
-    def change_state(self, state, cmd_id):
+    def change_state(self, state):
         self.log.debug('Changing state: %s -> %s', self.state, state)
         self.previous_state = self.state
         self.state = state
-        self._dds.send_Event('SummaryState', summaryState=self._ss_dict[state])
+        self._dds.send_Event('summaryState', summaryState=self._ss_dict[state])
         self.log.debug('New state: %s', self.state)
+
+    def send_valid_settings(self):
+        self.log.debug('Sending valid settings')
+
+
+class SimpleOfflineState(OfflineState):
+    def __init__(self, subsystem_tag, tsleep=0.5):
+        super(SimpleOfflineState, self).__init__(subsystem_tag, tsleep)
+
+    def enter_control(self, model):
+        model.change_state("STANDBY")
+        return 0, 'Done : OK'
+
+
+class SimpleStandbyState(StandbyState):
+
+    def __init__(self, subsystem_tag, tsleep=0.5):
+        super(SimpleStandbyState, self).__init__(subsystem_tag, tsleep)
+
+    def exit_control(self, model):
+        model.change_state("OFFLINE")
+        return 0, 'Done : OK'
+
+    def start(self, model):
+        model.change_state("DISABLED")
+        return 0, 'Done : OK'
+
+
+class SimpleDisabledState(DisabledState):
+    def __init__(self, subsystem_tag, tsleep=0.5):
+        super(SimpleDisabledState, self).__init__(subsystem_tag, tsleep)
+
+    def enable(self, model):
+        model.change_state("ENABLED")
+        return 0, 'Done : OK'
+
+    def standby(self, model):
+        model.change_state("STANDBY")
+        return 0, 'Done : OK'
+
+
+class SimpleEnabledState(EnabledState):
+    def __init__(self, subsystem_tag, tsleep=0.5):
+        super(SimpleEnabledState, self).__init__(subsystem_tag, tsleep)
+
+    def disable(self, model):
+        model.change_state("DISABLED")
+        return 0, 'Done : OK'
+
+
+class SimpleFaultState(FaultState):
+    def __init__(self, subsystem_tag, tsleep=0.5):
+        super(SimpleFaultState, self).__init__(subsystem_tag, tsleep)
+
+    def exit_control(self, model):
+        model.change_state("OFFLINE")
+        return 0, 'Done : OK'
 
 
 class SimpleCSC:
@@ -36,9 +93,11 @@ class SimpleCSC:
         self.device_id = device_id
         self.model = SimpleModel(self.subsystem_tag)
 
-        self.states = {"OFFLINE": OfflineState(self.subsystem_tag), "STANDBY": StandbyState(self.subsystem_tag),
-                       "DISABLED": DisabledState(self.subsystem_tag), "ENABLED": EnabledState(self.subsystem_tag),
-                       "FAULT": FaultState(self.subsystem_tag)}
+        self.states = {"OFFLINE": SimpleOfflineState(self.subsystem_tag),
+                       "STANDBY": SimpleStandbyState(self.subsystem_tag),
+                       "DISABLED": SimpleDisabledState(self.subsystem_tag),
+                       "ENABLED": SimpleEnabledState(self.subsystem_tag),
+                       "FAULT": SimpleFaultState(self.subsystem_tag)}
 
         self.context = Context(subsystem_tag=self.subsystem_tag, model=self.model, states=self.states)
 
@@ -64,6 +123,8 @@ class SimpleCSC:
         self.enable.start()
         self.disable.start()
         self.exitcontrol.start()
+
+        self.model.change_state('OFFLINE')
 
     def stop(self, signum, frame):
 
