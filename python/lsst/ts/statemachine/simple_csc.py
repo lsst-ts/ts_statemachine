@@ -1,5 +1,5 @@
 import logging
-from lsst.salpytools import salpylib
+from lsst.ts.salpytools import salpylib
 from .states import EnabledState, DisabledState, StandbyState, FaultState, OfflineState
 from .context import Context
 
