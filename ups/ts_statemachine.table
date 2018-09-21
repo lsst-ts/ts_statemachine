@@ -1,7 +1,7 @@
 setupRequired(utils)
 setupRequired(pex_exceptions)
 setupRequired(ts_sal)
-setupRequired(salpytools)
+setupRequired(ts_salpytools)
 
 envPrepend(PYTHONPATH, ${PRODUCT_DIR}/python)
 envPrepend(PATH, ${PRODUCT_DIR}/bin)
