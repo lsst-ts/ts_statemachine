@@ -1,5 +1,5 @@
 import logging
-from lsst.salpytools import StateTransitionException
+from lsst.ts.salpytools import StateTransitionException
 
 __all__ = ['OfflineState', 'StandbyState',
            'DisabledState', 'EnabledState',
