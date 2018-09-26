@@ -1,7 +1,9 @@
-from lsst.ts.statemachine import (OfflineState, StandbyState, DisabledState,
-                                  EnabledState, FaultState,
-                                  CommandNotRecognizedException)
 import logging
+from .states import OfflineState, StandbyState, DisabledState, EnabledState, FaultState
+from .state_machine_utils import CommandNotRecognizedException
+
+__all__ = ['Context']
+
 
 class Context:
     """The Context orchestrates triggers from the states to the model.
