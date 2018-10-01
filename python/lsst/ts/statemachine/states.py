@@ -1,7 +1,10 @@
-import time
 import logging
-import inspect
-from lsst.ts.statemachine import StateTransitionException, SummaryState
+from lsst.ts.salpytools import StateTransitionException
+
+__all__ = ['OfflineState', 'StandbyState',
+           'DisabledState', 'EnabledState',
+           'FaultState']
+
 
 class DefaultState:
 
@@ -9,9 +12,10 @@ class DefaultState:
         self.name = name
         self.subsystem_tag = subsystem_tag
         self.tsleep = tsleep
+        self.data = None
         self.log = logging.getLogger(self.name)
 
-    #<----- Default State methods corresponding to UML design under here ------>
+    # <----- Default State methods corresponding to UML design under here ------>
 
     def disable(self, model):
         raise StateTransitionException()
@@ -32,11 +36,10 @@ class DefaultState:
         raise StateTransitionException()
 
     def exit(self, model):
-        self.log.debug("Default: exit() not implemented")
+        pass
 
     def do(self, model):
-        self.log.debug("Default: do() not implemented")
-
+        pass
 
 
 class OfflineState(DefaultState):
@@ -46,13 +49,14 @@ class OfflineState(DefaultState):
 
     def enter_control(self, model):
         model.state = "STANDBY"
+        return 0, 'Done : OK'
         # TODO model.send_summary_state(SUMMARY_STATE_ENUM["STANDBY"])
 
     def exit(self, model):
-        self.log.debug("Offline: exit() not implemented")
+        pass
 
     def do(self, model):
-        self.log.debug("Offline: do() not implemented")
+        pass
 
 
 class StandbyState(DefaultState):
@@ -62,20 +66,24 @@ class StandbyState(DefaultState):
 
     def exit_control(self, model):
         model.state = "OFFLINE"
+        return 0, 'Done : OK'
         # TODO model.send_summary_state(SUMMARY_STATE_ENUM["OFFLINE"])
 
     def start(self, model):
         model.state = "DISABLED"
+        return 0, 'Done : OK'
         # TODO model.send_summary_state(SUMMARY_STATE_ENUM["DISABLED"])
 
     def exit(self, model):
-        self.log.debug("Standby: exit() not implemented")
+        pass
 
     def do(self, model):
-        self.log.debug("Standby: do() not implemented")
+        if model.previous_state == "OFFLINE":
+            model.send_valid_settings()
 
     def on_heartbeat(self, model):
         pass
+
 
 class DisabledState(DefaultState):
 
@@ -84,17 +92,17 @@ class DisabledState(DefaultState):
 
     def enable(self, model):
         model.state = "ENABLED"
-        # TODO model.send_summary_state(SUMMARY_STATE_ENUM["ENABLED"])
+        return 0, 'Done : OK'
 
     def standby(self, model):
         model.state = "STANDBY"
-        # TODO model.send_summary_state(SUMMARY_STATE_ENUM["STANDBY"])
+        return 0, 'Done : OK'
 
     def exit(self, model):
-        self.log.debug("Disabled: exit() not implemented")
+        pass
 
     def do(self, model):
-        self.log.debug("Disabled: do() not implemented")
+        pass
 
     def on_heartbeat(self, model):
         pass
@@ -108,6 +116,7 @@ class DisabledState(DefaultState):
     def on_interrupt_process_triggers(self, model):
         pass
 
+
 class EnabledState(DefaultState):
 
     def __init__(self, subsystem_tag, tsleep=0.5):
@@ -115,13 +124,13 @@ class EnabledState(DefaultState):
 
     def disable(self, model):
         model.state = "DISABLED"
-        # TODO model.send_summary_state(SUMMARY_STATE_ENUM["DISABLED"])
+        return 0, 'Done : OK'
 
     def exit(self, model):
-        self.log.debug("Enabled: exit() not implemented")
+        pass
 
     def do(self, model):
-        self.log.debug("Enabled: do() not implemented")
+        pass
 
     def on_hearbeat(self, model):
         pass
@@ -135,14 +144,15 @@ class EnabledState(DefaultState):
     def on_interrupt_process_triggers(self, model):
         pass
 
+
 class FaultState(DefaultState):
 
     def __init__(self, subsystem_tag, tsleep=0.5):
         super(FaultState, self).__init__('FAULT', subsystem_tag, tsleep)
 
-    def go_to_standby(self, model):
-        model.state = "STANDBY"
-        # TODO model.send_summary_state(SUMMARY_STATE_ENUM["STANDBY"])
+    def exit_control(self, model):
+        model.state = "OFFLINE"
+        return 0, 'Done : OK'
 
     def on_heartbeat(self, model):
         pass

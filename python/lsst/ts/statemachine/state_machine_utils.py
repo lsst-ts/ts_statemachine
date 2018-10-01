@@ -8,16 +8,16 @@ https://confluence.lsstcorp.org/display/SYSENG/SAL+constraints+and+recommendatio
 """
 from enum import Enum
 
+__all__ = ['SummaryState', 'CommandNotRecognizedException']
+
 
 class SummaryState(Enum):
-	DISABLED = 1
-	ENABLED = 2
-	FAULT = 3
-	OFFLINE = 4
-	STANDBY = 5
+    DISABLED = 1
+    ENABLED = 2
+    FAULT = 3
+    OFFLINE = 4
+    STANDBY = 5
 
-class StateTransitionException(Exception):
-    pass
 
 class CommandNotRecognizedException(Exception):
-	pass
+    pass

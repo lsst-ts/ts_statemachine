@@ -1,6 +1,9 @@
-from lsst.ts.statemachine import (OfflineState, StandbyState, DisabledState,
-                                  EnabledState, FaultState,
-                                  CommandNotRecognizedException)
+import logging
+from .states import OfflineState, StandbyState, DisabledState, EnabledState, FaultState
+from .state_machine_utils import CommandNotRecognizedException
+
+__all__ = ['Context']
+
 
 class Context:
     """The Context orchestrates triggers from the states to the model.
@@ -27,6 +30,8 @@ class Context:
         self.model = model
         self.current_state = default_state
         self.tsleep = tsleep
+        self.log = logging.getLogger('Context({})'.format(self.subsystem_tag))
+
         if states is not None:
             self.states = states
         else:
@@ -40,13 +45,14 @@ class Context:
             self.states["INITIAL"] = self.states["OFFLINE"]
             self.states["FINAL"] = self.states["OFFLINE"]
 
-        # Useful debug logging
-        # self.log = create_logger(level=logging.NOTSET, name=self.subsystem_tag)
-        # self.log.debug('{} Init beginning'.format(self.subsystem_tag))
-        # self.log.debug('Starting with default state: {}'.format(default_state))
+        self._command_list = {'ENTERCONTROL': 'enter_control',
+                              'START': 'start',
+                              'ENABLE': 'enable',
+                              'DISABLE': 'disable',
+                              'STANDBY': 'standby',
+                              'EXITCONTROL': 'exit_control'}
 
-
-    def execute_command(self, command):
+    def execute_command(self, command, data):
         """This method delegates commands recieved by a DDSController to the
         state.
 
@@ -60,53 +66,36 @@ class Context:
             DDSController object.
         """
 
-        if command == "ENTERCONTROL":
-
+        if command in self._command_list:
             # Get the current state
             current_state = self.states[self.model.state]
             # Call exit methods, killing threads perhaps
             current_state.exit(self.model)
-            # Call our "change state" method
-            current_state.enter_control(self.model)
+            # Call our "change state" method dynamically
+            current_state.data = data
+            err, msg = getattr(current_state, self._command_list[command])(self.model)
             # Since the state we changed to is implementer decided, we re-get it
             current_state = self.states[self.model.state]
             # Call the do methods on the state we just entered, starting threads perhaps
             current_state.do(self.model)
-
-        elif command == "START":
-            current_state = self.states[self.model.state]
-            current_state.exit(self.model)
-            current_state.start(self.model)
-            current_state = self.states[self.model.state]
-            current_state.do(self.model)
-
-        elif command == "ENABLE":
-            current_state = self.states[self.model.state]
-            current_state.exit(self.model)
-            current_state.enable(self.model)
-            current_state = self.states[self.model.state]
-            current_state.do(self.model)
-
-        elif command == "DISABLE":
-            current_state = self.states[self.model.state]
-            current_state.exit(self.model)
-            current_state.disable(self.model)
-            current_state = self.states[self.model.state]
-            current_state.do(self.model)
-
-        elif command == "STANDBY":
-            current_state = self.states[self.model.state]
-            current_state.exit(self.model)
-            current_state.standby(self.model)
-            current_state = self.states[self.model.state]
-            current_state.do(self.model)
-
-        elif command == "EXITCONTROL":
-            current_state = self.states[self.model.state]
-            current_state.exit(self.model)
-            current_state.exit_control(self.model)
-            current_state = self.states[self.model.state]
-            current_state.do(self.model)
-
+            return err, msg
         else:
             raise CommandNotRecognizedException()
+
+    def add_command(self, name, method=None):
+        '''
+        Add a command to the list of valid commands.
+
+        :param name: The name of the command.
+        :param method: The method associated with that command.
+        :return:
+        '''
+
+        uname = name.upper()
+
+        if uname in self._command_list:
+            raise IOError('{} already in the command list.'.format(name))
+        elif method is None:
+            self._command_list[uname] = name
+        else:
+            self._command_list[uname] = method
